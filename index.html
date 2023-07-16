@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>book detail</title>
+  </head>
+  <body>
+    <div class="btn-cont">
+      <button
+        type="button"
+        data-toggle="modal"
+        data-target="#resheta"
+        class="btn btn-primary"
+      >
+        show modal
+      </button>
+    </div>
+
+    <!-- Modal  target -->
+    <div
+      class="modal fade"
+      id="resheta"
+      tabindex="-1"
+      aria-labelledby="exampleModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-spe">
+        <div class="modal-content">
+          <div class="modal-header no-border-bottom close-modal">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div
+            class="modal-body no-border-bottom modal2-spe font-16 print-doctor"
+          >
+            <div class="first-doctor">
+              <div class="flex-top-doctor-sh mb-3">
+                <div class="first-col">
+                  <img
+                    src="imgs/pexels-karolina-grabowska-4021775.png"
+                    class="img-top-small"
+                    alt=""
+                  />
+                  <div class="round-radios-def">
+                    التخصص : <span>اخصائي جراحة</span>
+                  </div>
+                </div>
+                <div class="first-col">
+                  <div class="default-div-main font-bold">الدكتور</div>
+                  <div class="round-radios-def2">هيثم نهار</div>
+                  <div class="default-div-main">مؤهلات الطبيب</div>
+                </div>
+                <div class="first-col">
+                  <img src="imgs/Group 81396.png" class="img-top-big" alt="" />
+                </div>
+              </div>
+              <div class="two-lines-container mb-3">
+                <div class="first-line-main mb-2"></div>
+                <div class="first-line-main"></div>
+              </div>
+              <div class="flex-doc-info mb-3">
+                <div class="info-det-main">
+                  اسم المريض : <span class="red-col">محمد اشرف</span>
+                </div>
+                <div class="info-det-main">
+                  فصيلة الدم : <span class="red-col">A+</span>
+                </div>
+                <div class="info-det-main">
+                  السن : <span class="red-col">30</span>
+                </div>
+              </div>
+              <div class="flex-doc-info mb-3">
+                <div class="info-det-main">
+                  التاريخ : <span class="red-col">30/10/2020</span>
+                </div>
+                <div class="info-det-main">
+                  العدد : <span class="red-col">30</span>
+                </div>
+              </div>
+              <div class="first-line-main-sm"></div>
+              <div class="all-prescription mt-3 mb-3">
+                <div class="rx-div mb-3">R.X</div>
+                <div class="flex-name-time mb-4">
+                  <div class="zero-shrinked">
+                    <div>-</div>
+                    <div class="name-drug">Drug name</div>
+                  </div>
+                  <div class="drug-time">2 مرة كل 8 ساعات</div>
+                </div>
+                <div class="flex-name-time mb-4">
+                  <div class="zero-shrinked">
+                    <div>-</div>
+                    <div class="name-drug">Drug name</div>
+                  </div>
+                  <div class="drug-time">2 مرة كل 8 ساعات</div>
+                </div>
+              </div>
+              <div class="first-line-main mb-3"></div>
+              <div class="flex-group-bet">
+                <div class="adress-fle">
+                  العنوان / <span>شارع المتنبي بغداد</span>
+                </div>
+                <div class="adress-fle">
+                  رقم الموبايل / <span>01020398488</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex-ticket-btn mt-3">
+              <button class="up next-print font-bold doctor-p">طباعة</button>
+              <a href="accepted-order-dr.html" class="bg-green up next-print"
+                >المريض التالي</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      document
+        .querySelector(".doctor-p")
+        .addEventListener("click", function () {
+          window.print();
+        });
+    </script>
+  </body>
+</html>
